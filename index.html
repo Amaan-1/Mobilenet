@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <Style>
+        .header_div {
+            background-color: white;
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 10px;
+            border-radius: 25px;
+            margin-bottom: 50px;
+        }
+        
+        button {
+            outline: none;
+        }
+        
+        #camera {
+            width: 400;
+            height: 300;
+            border-radius: 10px;
+            border: white 2px dashed;
+        }
+        
+        #result {
+            width: 400;
+            height: 300;
+            border-radius: 10px;
+            border: white 2px dashed;
+        }
+    </Style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 header_div">
+            <h1 style="font-size: 150%;">Image Indentifier &nbsp;
+                <img src="logo.gif" style="width: 50px; height: 50px; border-radius: 100px;">
+            </h1>
+        </div>
+
+        <div class="col-sm-6 col-xs-12 col-lg-6 camera_holder" style="padding-bottom: 20px;">
+            <h1>Webcam View:-</h1>
+            <br>
+            <div id="camera"></div>
+            <br>
+            <button onclick="snap();" class="clicker btn btn-info">CAPTURE</button>
+            <br>
+        </div>
+        <br>
+        <div class="col-sm-6 col-xs-12 col-lg-6 snapshot-frame">
+            <h1>Taken Image:-</h1>
+            <br>
+            <div id="result"></div>
+            <br>
+            <button onclick="predict();" class="predictor btn btn-danger">PREDICT</button>
+            <br>
+        </div>
+        <br>
+        <div class="col-xs-12 bulb_container" style="left: 25%;">
+            <h4 class="col-xs-12 col-sm-6">
+                <img src="./blub.gif">
+                <span id="object_label">t</span>
+            </h4>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="copyright">
+            Developed By Amaan . . .
+        </div>
+        <br>
+        <br>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+body {
+    font-family: 'Reggae One', cursive;
+    background-image: linear-gradient(45deg, rgb(121, 190, 10), rgb(56, 88, 4));
+}
+
+.copyright {
+    bottom: 0;
+    position: fixed;
+    RIGHT: 5px;
+}
+
+.bulb_container img {
+    width: 50px;
+}
+
+.bulb_container h4 {
+    background-color: white;
+    box-shadow: 5px 5px 15px #000000;
+    border-radius: 7.5px;
+}
